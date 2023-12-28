@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+		<style>
+			body, html{
+				padding: 0;
+				margin: 0;
+			}
+			body::-webkit-scrollbar {
+				width: 10px;
+			}
+			body::-webkit-scrollbar-thumb {
+				background-color: rgb(255, 0, 212);
+
+			}
+			body::-webkit-scrollbar-track{
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
